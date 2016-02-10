@@ -1,5 +1,7 @@
 # Hue Nini light - Gradually turns off the lights
 
+[![Docker Repository on Quay](https://quay.io/repository/purplebooth/hue-nini-php/status "Docker Repository on Quay")](https://quay.io/repository/purplebooth/hue-nini-php)
+
 This is a bit of a toy I use to turn of my lights slowly in my house. Staggers them a bit so they don't all flick off at
 once.
 
