@@ -1,0 +1,14 @@
+{
+    "name": "purplebooth/nini-light",
+    "description": "Slowly turn off the lights",
+    "require": {
+        "sqmk/phue": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billie Alice Thompson",
+            "email": "billie@purplebooth.co.uk"
+        }
+    ]
+}
