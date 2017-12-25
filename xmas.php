@@ -24,14 +24,14 @@ use Phue\Command\CreateSchedule;
 use Phue\Command\SetLightState;
 use Phue\TimePattern\Timer;
 
-if ($argc !== 5) {
-    echo $argv[0] . " minuites-to-lights-out hue-ip hue-password lights-to-use-regex\n";
+if ($argc !== 4) {
+    echo $argv[0] . " hue-ip hue-password lights-to-use-regex\n";
     exit(1);
 }
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$client = new \Phue\Client($argv[2], $argv[3]);
+$client = new \Phue\Client($argv[1], $argv[2]);
 
 $colors = [
     'red' => ['x' => 0.3972, 'y' => 0.4564],
@@ -50,7 +50,7 @@ do {
             continue;
         }
 
-        if (preg_match($argv[4], $light->getName()) === 0) {
+        if (preg_match($argv[3], $light->getName()) === 0) {
             continue;
         }
 
