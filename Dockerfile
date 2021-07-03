@@ -1,4 +1,4 @@
-FROM php:7-cli
+FROM php:7.3.29-cli
 COPY . /usr/src/nini
 WORKDIR /usr/src/nini
 RUN apt-get update && apt-get install -y git zlib1g-dev && \
